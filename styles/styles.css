@@ -102,4 +102,29 @@ section:nth-child(odd) {
   margin-top: 10px;
 }
 
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.about-text .content {
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(149, 149, 252);
+  letter-spacing: 0.15em;
+}
+
 /*# sourceMappingURL=styles.css.map */

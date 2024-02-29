@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fff;
+  background-color: #1c1e21;
+  margin-top: 100px;
+}
+
+ion-icon {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.nav-container {
+  background-color: #131416;
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+  top: 0;
+  right: 0;
+  position: fixed;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  z-index: 10;
+
+  img {
+    display: none;
+  }
+}
+
+.ul-nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+
+  .a-nav {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .a-nav:after {
+    background: #fff;
+    display: block;
+    position: absolute;
+    content: "";
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+  }
+
+  .a-nav:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+section {
+  padding-inline: 15vw;
+  padding-top: 70px;
+  padding-bottom: 35px;
+}
+
+section:nth-child(odd) {
+  background-color: #18191c;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.profile-content {
+  font-size: 1.5em;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+}
+
+.profile-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-icon {
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}

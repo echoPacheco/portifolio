@@ -102,6 +102,12 @@ section:nth-child(odd) {
   margin-top: 10px;
 }
 
+.stack-container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
 .about-container {
   display: flex;
   justify-content: center;
@@ -115,7 +121,6 @@ section:nth-child(odd) {
   height: 300px;
   margin-left: 30px;
 }
-
 .about-text .content {
   letter-spacing: 0.05em;
 }
@@ -184,6 +189,31 @@ section:nth-child(odd) {
 
 .card button:hover {
   background-color: #272727;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.skills {
+  background-color: #131416;
+  padding-block: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1764705882);
+  border-radius: 24px;
+  text-align: center;
+}
+.skills p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-block: 8px;
+}
+
+.skills-icon {
+  height: 50px;
+  width: 50px;
+  margin-inline: 0.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */

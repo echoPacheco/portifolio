@@ -223,6 +223,27 @@ section:nth-child(odd) {
   margin-inline: 0.5em;
 }
 
+.experiences-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+
+  .card {
+    align-items: start;
+  }
+}
+
+.experiences-img {
+  img {
+    height: 40px;
+    width: 40px;
+    margin-inline: 0.5em;
+    margin-top: 10px;
+    margin-bottom: 0;
+    object-fit: contain;
+  }
+}
+
 .contact-container {
   font-size: 1em;
   display: grid;
@@ -281,26 +302,5 @@ section:nth-child(odd) {
   }
   button:hover {
     background-color: #272727;
-  }
-}
-
-.experiences-container {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-
-  .card {
-    align-items: start;
-  }
-}
-
-.experiences-img {
-  img {
-    height: 40px;
-    width: 40px;
-    margin-inline: 0.5em;
-    margin-top: 10px;
-    margin-bottom: 0;
-    object-fit: contain;
   }
 }

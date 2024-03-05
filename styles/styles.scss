@@ -304,3 +304,17 @@ section:nth-child(odd) {
     background-color: #272727;
   }
 }
+
+footer {
+  background-color: #131416;
+  font-weight: bold;
+  padding-inline: 15vw;
+  display: flex;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    margin-left: 15px;
+    text-decoration: none;
+  }
+}
